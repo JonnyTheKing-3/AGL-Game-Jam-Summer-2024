@@ -16,6 +16,7 @@ public class SmoothCameraFollow : MonoBehaviour
     
     // Velocity variable for SmoothDamp
     private Vector3 velocity = Vector3.zero;
+    private float angle_velocity = 0f;
 
     private void Start()
     {
@@ -25,11 +26,14 @@ public class SmoothCameraFollow : MonoBehaviour
     private void LateUpdate()
     {   // The position of the object to reach
         Vector3 desiredPos = new Vector3(target.position.x + xOffset, target.position.y + yOffset, (-10 +zOffset));
+        float desiredAngle = target.transform.rotation.eulerAngles.z;
         
         // Get camera follow 
         Vector3 newPos = Vector3.SmoothDamp(transform.position, desiredPos, ref velocity, TimeToGetToTarget);
+        float newAngle = Mathf.SmoothDamp(0f, desiredAngle, ref angle_velocity, TimeToGetToTarget);
 
         // Implement camera follow
         transform.position = newPos;
+        transform.rotation = new Quaternion(0f, 0f, newAngle, 0f);
     }
 }

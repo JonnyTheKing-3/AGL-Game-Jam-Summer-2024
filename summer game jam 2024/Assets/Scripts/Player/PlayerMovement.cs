@@ -58,6 +58,11 @@ public class PlayerMovement : MonoBehaviour
     // Keeps track of if the player was moving
     public float lastmoveX;
 
+    // Keeps track of the appropriate jump direction based on gravity pull
+    public Vector2 jumpDir;
+
+    public float xForCalculateMovement = 0;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -75,12 +80,9 @@ public class PlayerMovement : MonoBehaviour
     {
         PlayerInput();
         FaceInputDirection();
+        SetUpAppropriateGravityAndJumpDirectionAndVelocity();
 
-        myconstantForce.force = Vector3.down * gravity;
-        // If the player is in the air, enable extra gravity. Otherwise, disable extra gravity
-        myconstantForce.enabled = !Grounded;
-
-            // For debugging coyote time
+        // For debugging coyote time
         if (coyoteTimer > 0)
         {
             CoyoteAvailable = true;
@@ -141,8 +143,7 @@ public class PlayerMovement : MonoBehaviour
         // Grounded Movement
         if (!IsOnSlope)
         {
-            // Move the character horizontally
-            rb.AddForce(CalculateMovement() * Vector2.right);  
+            rb.AddForce(CalculateMovement() * transform.right);
         }
         
         // Slope Movement
@@ -180,9 +181,9 @@ public class PlayerMovement : MonoBehaviour
     public void Jump()
     {
         FMODbanks.Instance.PlayJumpSFX(gameObject);     // Play jump sfx
-        
-        // Add velocity to the y to simulate jump... might replace with add force impulse 
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
+        // Add velocity to the direction gravity is pulling 
+        rb.velocity += jumpDir*jumpForce;
     }
     
     private float CalculateMovement()
@@ -192,7 +193,7 @@ public class PlayerMovement : MonoBehaviour
         
         // Calculate the difference of the speed the player wants to go by
         // how fast the player is already going
-        float speedDif = targetSpeed - rb.velocity.x;
+        float speedDif = targetSpeed - xForCalculateMovement;
         
         // If the player is going the same direction as the one they pressed, accelerate. Else, decelerate
         float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
@@ -216,7 +217,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsGrounded()
     {
-        Grounded = Physics2D.Raycast(transform.position, Vector2.down, RayForGroundCheck, groundLayer);
+        Grounded = Physics2D.Raycast(transform.position, -transform.up, RayForGroundCheck, groundLayer);
         
         // Quick check to make sure the player isn't able to go up slopes that are too steep
         if (Grounded && !IsOnSlope && SurfaceAngle != 0) { Grounded = false;}
@@ -229,12 +230,24 @@ public class PlayerMovement : MonoBehaviour
         CanJump = true;
     }
 
+    private void SetUpAppropriateGravityAndJumpDirectionAndVelocity()
+    {
+        // Set up appropriate gravity based on player's rotation (the player will always be rotated towards the gravity pull)
+        if (transform.rotation.eulerAngles.z == 0f) { myconstantForce.force = Vector2.down * gravity; jumpDir = Vector2.up; xForCalculateMovement = rb.velocity.x; }
+        else if (transform.rotation.eulerAngles.z == 180f) { myconstantForce.force = Vector2.up * gravity; jumpDir = Vector2.down; xForCalculateMovement = -rb.velocity.x; }
+        else if (transform.rotation.eulerAngles.z == 90f) { myconstantForce.force = Vector2.right * gravity; jumpDir = Vector2.left; xForCalculateMovement = rb.velocity.y; }
+        else if (transform.rotation.eulerAngles.z == 270f) { myconstantForce.force = Vector2.left * gravity; jumpDir = Vector2.right; xForCalculateMovement = -rb.velocity.y; }
+        
+        // If the player is in the air, enable extra gravity. Otherwise, disable extra gravity
+        myconstantForce.enabled = !Grounded;
+    }
+
     public bool OnSlope()
     {
-        slopeHit = Physics2D.Raycast(transform.position, Vector2.down, RayForGroundCheck, groundLayer);
+        slopeHit = Physics2D.Raycast(transform.position, -transform.up, RayForGroundCheck, groundLayer);
         if (slopeHit.collider != null)
         {
-            SurfaceAngle = Mathf.Abs(Vector2.Angle(Vector2.up, slopeHit.normal));
+            SurfaceAngle = Mathf.Abs(Vector2.Angle(transform.up, slopeHit.normal));
             return SurfaceAngle < maxSlopeAngle && SurfaceAngle != 0;
         }
         
