@@ -607,6 +607,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 17.04}
+--- !u!1 &1836293137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1836293139}
+  - component: {fileID: 1836293140}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1836293139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836293137}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1836293140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836293137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6956b0b2254dc09488e9e377eb3b648a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpSFX:
+    Guid:
+      Data1: 2105520386
+      Data2: 1214650108
+      Data3: 2021525401
+      Data4: 761042566
+    Path: event:/Player/Jump
+  hoverSFX:
+    Guid:
+      Data1: 552671730
+      Data2: 1125356259
+      Data3: -1094687041
+      Data4: 852442116
+    Path: event:/Player/Hover (Walk)
 --- !u!1 &1843147156
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,3 +1050,4 @@ SceneRoots:
   - {fileID: 1888514128}
   - {fileID: 769501425}
   - {fileID: 651451653}
+  - {fileID: 1836293139}

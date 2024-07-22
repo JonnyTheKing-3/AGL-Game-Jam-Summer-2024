@@ -15,11 +15,38 @@ MonoBehaviour:
   Path: summer jam agl 2024 fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638571873825200660
+  lastModified: 638571955023793326
   FileSizes:
   - Name: Desktop
-    Value: 712
+    Value: 864
   Exists: 1
+--- !u!114 &-8552829742153038112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Jump
+  Guid:
+    Data1: 2105520386
+    Data2: 1214650108
+    Data3: 2021525401
+    Data4: 761042566
+  Banks:
+  - {fileID: -1987037941559894527}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-2982182226062754323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,10 +62,30 @@ MonoBehaviour:
   Path: summer jam agl 2024 fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638571873825150784
+  lastModified: 638571955023763426
   FileSizes:
   - Name: Desktop
     Value: 1036
+  Exists: 1
+--- !u!114 &-1987037941559894527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Player.bank
+  m_EditorClassIdentifier: 
+  Path: summer jam agl 2024 fmod/Build/Desktop/Player.bank
+  Name: Player
+  StudioPath: bank:/Player
+  lastModified: 638571955033596728
+  FileSizes:
+  - Name: Desktop
+    Value: 379328
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -55,11 +102,41 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -8668691135767664119}
   - {fileID: -2982182226062754323}
-  EditorEvents: []
+  - {fileID: -1987037941559894527}
+  EditorEvents:
+  - {fileID: -8552829742153038112}
+  - {fileID: 2850905612029721947}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2982182226062754323}
   StringsBanks:
   - {fileID: -8668691135767664119}
-  cacheTime: 638571873825200660
+  cacheTime: 638571955033596728
   cacheVersion: 131618
+--- !u!114 &2850905612029721947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Hover (Walk)
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Hover (Walk)
+  Guid:
+    Data1: 552671730
+    Data2: 1125356259
+    Data3: -1094687041
+    Data4: 852442116
+  Banks:
+  - {fileID: -1987037941559894527}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000

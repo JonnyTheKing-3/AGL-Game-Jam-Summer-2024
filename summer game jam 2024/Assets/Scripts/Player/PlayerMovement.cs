@@ -2,12 +2,14 @@ using System;
 using System.Timers;
 using UnityEngine;
 using Vector2 = UnityEngine.Vector2;
+using FMODUnity;
 
 public class PlayerMovement : MonoBehaviour
 {
     [Header("REFERENCES")]
     private Rigidbody2D rb;
     private ConstantForce2D myconstantForce;
+    private FMODbanks FmodBanks;
 
     [Header("PLAYER SETTINGS")] 
     public KeyCode JumpKey;
@@ -52,6 +54,9 @@ public class PlayerMovement : MonoBehaviour
     
     // flip variable to see what direction the player is facing
     private bool isFacingRight = true;
+    
+    // Keeps track of if the player was moving
+    public float lastmoveX;
 
     private void Start()
     {
@@ -62,6 +67,8 @@ public class PlayerMovement : MonoBehaviour
         AvailableJumps = NumberOfJumpsForPlayer;
         CanJump = true;
         velPower = 0.9f;
+        moveX = 0f;
+        lastmoveX = 0f;
     }
 
     private void Update()
@@ -154,6 +161,10 @@ public class PlayerMovement : MonoBehaviour
     public void PlayerInput()
     {
         moveX = Input.GetAxisRaw("Horizontal");
+        
+        if (moveX == 0 && Mathf.Abs(lastmoveX) == 1) { FMODbanks.Instance.StopHoverSFX(); }       // If the player stopped and was moving, stop the hover sound
+        else if (Mathf.Abs(moveX) == 1 && lastmoveX == 0) { FMODbanks.Instance.PlayHoverSFX(); }  // When the player first moves, play the hover sound
+        lastmoveX = moveX; // Update lastmoveX
 
         // If player presses the dash key, make the target speed be the dash speed
         if (Input.GetKey(DashKey))
@@ -168,6 +179,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump()
     {
+        FMODbanks.Instance.PlayJumpSFX(gameObject);     // Play jump sfx
+        
         // Add velocity to the y to simulate jump... might replace with add force impulse 
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
     }

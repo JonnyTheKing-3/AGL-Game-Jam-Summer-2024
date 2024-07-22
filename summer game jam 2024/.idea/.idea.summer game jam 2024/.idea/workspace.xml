@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab6069b7-e844-40f4-9317-bf4990b4e4ff" name="Changes" comment="" />
+    <list default="true" id="ab6069b7-e844-40f4-9317-bf4990b4e4ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEST-Movement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TEST-Movement.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/buildrecords/Desktop/Master.br" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/buildrecords/Desktop/Master.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{96f952b3-50fd-4433-98cb-01193683e67a}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{96f952b3-50fd-4433-98cb-01193683e67a}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{aaab04cf-5f7f-46dd-8b52-47b6daf19b39}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{aaab04cf-5f7f-46dd-8b52-47b6daf19b39}.pdc" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +21,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/FMODbanks.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2jZtx2ntI38IUtCm23iuNvvmf51" />
   <component name="ProjectViewState">
@@ -85,6 +95,7 @@
       <updated>1721606681059</updated>
       <workItem from="1721606686911" duration="2800000" />
       <workItem from="1721615058707" duration="1092000" />
+      <workItem from="1721623613784" duration="3180000" />
     </task>
     <servers />
   </component>
