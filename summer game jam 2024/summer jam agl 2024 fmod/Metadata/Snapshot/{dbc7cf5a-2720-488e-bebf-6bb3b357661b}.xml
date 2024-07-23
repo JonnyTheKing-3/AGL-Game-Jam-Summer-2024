@@ -34,6 +34,7 @@
 			<destination>{ae937670-6095-4f86-b07c-5b14343c240f}</destination>
 			<destination>{337d5033-3b12-4f57-8797-f1c013e9458a}</destination>
 			<destination>{60991542-86b1-47a5-8ebc-5d5eff036d86}</destination>
+			<destination>{8805d988-21dc-4f4c-b967-2ffe6a9f81a1}</destination>
 		</relationship>
 		<relationship name="snapshotTracks">
 			<destination>{3792edfa-52be-4f60-bb48-60044d32bb6b}</destination>
@@ -196,6 +197,17 @@
 		</property>
 		<relationship name="automatableObject">
 			<destination>{5a75a9a2-5749-498d-b821-072afd2e8339}</destination>
+		</relationship>
+	</object>
+	<object class="SnapshotProperty" id="{8805d988-21dc-4f4c-b967-2ffe6a9f81a1}">
+		<property name="propertyName">
+			<value>wetLevel</value>
+		</property>
+		<property name="value">
+			<value>-14.5</value>
+		</property>
+		<relationship name="automatableObject">
+			<destination>{7735e972-9e2c-4437-a7bb-8d883057a21a}</destination>
 		</relationship>
 	</object>
 	<object class="SnapshotTrack" id="{3792edfa-52be-4f60-bb48-60044d32bb6b}">
