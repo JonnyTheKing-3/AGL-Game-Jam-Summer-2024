@@ -47,4 +47,9 @@ public class FMODbanks : MonoBehaviour
             hoverInstance.release();
         }
     }
+    
+    public void PlayGravitySwitchSFX(GameObject OriginOfSound)
+    {
+        RuntimeManager.PlayOneShotAttached(GravitySwitchSFX, OriginOfSound);
+    }
 }

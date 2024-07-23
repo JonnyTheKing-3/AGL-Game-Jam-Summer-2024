@@ -884,6 +884,10 @@ PrefabInstance:
       value: Walkable
       objectReference: {fileID: 0}
     - target: {fileID: 5080926887196142217, guid: efa4248edc3b99d49980f37fdc0171f9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 21.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080926887196142217, guid: efa4248edc3b99d49980f37fdc0171f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.09
       objectReference: {fileID: 0}

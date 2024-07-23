@@ -264,7 +264,7 @@ MonoBehaviour:
   CoyoteAvailable: 0
   SurfaceAngle: 0
   IsOnSlope: 0
-  RayForGroundCheck: 0.8
+  RayForGroundCheck: 0.86
   OnDelay: 0
   lastmoveX: 0
   jumpDir: {x: 0, y: 0}
