@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{8a092449-6d15-432c-ad2a-2a52284f5f72}">
+		<property name="assetPath">
+			<value>AGLGJ Platforms/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16ca3294-9a61-45d3-8252-30b07ab235ac}</destination>
+		</relationship>
+	</object>
+</objects>
