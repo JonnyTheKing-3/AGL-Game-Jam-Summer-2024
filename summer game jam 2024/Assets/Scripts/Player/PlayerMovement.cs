@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode JumpKey;
     public KeyCode DashKey;
     public int NumberOfJumpsForPlayer;
+    [SerializeField] private float JumpDelayReset = 0.2f;
 
     [Header("CHARACTER SETTINGS")] 
     public float gravity;
@@ -52,6 +53,8 @@ public class PlayerMovement : MonoBehaviour
     private LayerMask groundLayer;
     public float RayForGroundCheck = 1.3f; // Might need to change this variable depending on object
     private bool CanJump = true;
+    // Used for passthrough platform script
+    public bool OnDelay = false;
     
     // flip variable to see what direction the player is facing
     private bool isFacingRight = true;
@@ -63,9 +66,6 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 jumpDir;
 
     public float xForCalculateMovement = 0;
-    
-    // Used for passthrough platform script
-    public bool OnDelay = false;
 
     private void Start()
     {
@@ -107,10 +107,9 @@ public class PlayerMovement : MonoBehaviour
         // Jump if the player pressed jump button AND still has available jumps
         if ( Input.GetKeyDown(JumpKey) && (AvailableJumps > 0 || coyoteTimer > 0))
         {
-            Debug.Log("Before decrement: " + AvailableJumps);
+            CanJump = false;
             // Decrease the number of jumps and remove coyote time before jump
             --AvailableJumps;
-            Debug.Log("After decrement: " + AvailableJumps);
             coyoteTimer = 0;
             
             // Jump
@@ -128,8 +127,7 @@ public class PlayerMovement : MonoBehaviour
              * PS if buffer is too small, make it larger lol
              */
             
-            CanJump = false;
-            Invoke("EnableJump", .02f);
+            Invoke("EnableJump", JumpDelayReset);
         }
 
         // If the player is past the coyote time and didn't jump, then make the player have only one jump

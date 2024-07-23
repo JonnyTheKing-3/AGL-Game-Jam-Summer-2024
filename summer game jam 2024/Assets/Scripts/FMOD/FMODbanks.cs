@@ -9,6 +9,9 @@ public class FMODbanks : MonoBehaviour
     public static FMODbanks Instance { get; private set; }
     public EventReference jumpSFX;
     public EventReference hoverSFX;
+    public EventReference DeathByCrushinSFX;
+    public EventReference GravitySwitchSFX;
+    public EventReference platformFlyingSFX;
 
     private void Awake()
     {
