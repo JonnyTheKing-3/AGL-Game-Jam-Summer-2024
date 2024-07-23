@@ -46,6 +46,12 @@ public class Shake : MonoBehaviour
         }
         // Return camera to original spot
         transform.position = StartingPos;
+        
+        // If this is for a moving platform, start the moveplatform coroutine
+        if (transform.GetChild(0).TryGetComponent(out MovingPlatformManaging mpm))
+        {
+            mpm.StartMoving = true;
+        }
     }
     
     
@@ -53,6 +59,8 @@ public class Shake : MonoBehaviour
     // Going to have have to give less intensity to achieve a similar effect as it's stationary counter part (around 1/4ish to 1/3ish of stationary counterpart)
     IEnumerator FollowingWhileShaking(float duration, float intesnsity)
     {
+        // Remembers the starting position before shake
+        Vector3 StartingPos = transform.position;
         // Remembers the starting position before shake
         float elapsedTime = 0f;
 
@@ -67,6 +75,15 @@ public class Shake : MonoBehaviour
             transform.position += Random.insideUnitSphere * strength; // May use insideUnitCircle method which (only affect x and y axis, no z)
             
             yield return null;
+        }
+
+        // Return camera to original spot
+        transform.position = StartingPos;
+        
+        // If this is for a moving platform, start the moveplatform coroutine
+        if (transform.GetChild(0).TryGetComponent(out MovingPlatformManaging mpm))
+        {
+            mpm.StartMoving = true;
         }
     }
 }

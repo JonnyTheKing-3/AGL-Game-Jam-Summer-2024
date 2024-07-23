@@ -12,6 +12,7 @@ public class MovingPlatformManaging : MonoBehaviour
      */
     
     public Transform OriginalSpot;
+    public bool IWantThisPlatformToMove = false;
     public bool StartMoving = false;
     public float travelSpeed = 0.5f;
 
@@ -25,9 +26,10 @@ public class MovingPlatformManaging : MonoBehaviour
     {
         if (!StartMoving) { return; }
         
-        if (StartMoving)
+        if (StartMoving && IWantThisPlatformToMove)
         {
             StartMoving = false;
+            IWantThisPlatformToMove = false;
             StartCoroutine(MovePlatform());
         }
     }
