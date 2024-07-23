@@ -40,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     
     [Header("STATUS ON PLAYER")] 
     public float moveX;
+    public float moveY;
     public float DesiredSpeed;
     public bool Grounded;
     public int AvailableJumps;
@@ -62,6 +63,9 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 jumpDir;
 
     public float xForCalculateMovement = 0;
+    
+    // Used for passthrough platform script
+    public bool OnDelay = false;
 
     private void Start()
     {
@@ -73,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
         CanJump = true;
         velPower = 0.9f;
         moveX = 0f;
+        moveY = 0f;
         lastmoveX = 0f;
     }
 
@@ -102,8 +107,10 @@ public class PlayerMovement : MonoBehaviour
         // Jump if the player pressed jump button AND still has available jumps
         if ( Input.GetKeyDown(JumpKey) && (AvailableJumps > 0 || coyoteTimer > 0))
         {
+            Debug.Log("Before decrement: " + AvailableJumps);
             // Decrease the number of jumps and remove coyote time before jump
             --AvailableJumps;
+            Debug.Log("After decrement: " + AvailableJumps);
             coyoteTimer = 0;
             
             // Jump
@@ -126,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // If the player is past the coyote time and didn't jump, then make the player have only one jump
-        if (coyoteTimer <= 0 && AvailableJumps == NumberOfJumpsForPlayer)
+        if (coyoteTimer <= 0 && AvailableJumps == NumberOfJumpsForPlayer && NumberOfJumpsForPlayer < 2)
         {
             AvailableJumps = 1;
         }
@@ -162,7 +169,8 @@ public class PlayerMovement : MonoBehaviour
     public void PlayerInput()
     {
         moveX = Input.GetAxisRaw("Horizontal");
-        
+        moveY = Input.GetAxisRaw("Vertical");
+
         if (moveX == 0 && Mathf.Abs(lastmoveX) == 1) { FMODbanks.Instance.StopHoverSFX(); }       // If the player stopped and was moving, stop the hover sound
         else if (Mathf.Abs(moveX) == 1 && lastmoveX == 0) { FMODbanks.Instance.PlayHoverSFX(); }  // When the player first moves, play the hover sound
         lastmoveX = moveX; // Update lastmoveX
@@ -217,6 +225,9 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsGrounded()
     {
+        // This portion is to avoid extra impulse player gets when they jump on to the platform when they reach a platform from under AND to help with platform script
+        if (!Grounded && rb.velocity.y > 0 || OnDelay) { return false;}
+        
         Grounded = Physics2D.Raycast(transform.position, -transform.up, RayForGroundCheck, groundLayer);
         
         // Quick check to make sure the player isn't able to go up slopes that are too steep
