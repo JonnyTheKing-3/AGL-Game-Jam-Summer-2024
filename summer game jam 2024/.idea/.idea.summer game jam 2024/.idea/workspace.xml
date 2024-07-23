@@ -6,20 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ab6069b7-e844-40f4-9317-bf4990b4e4ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Passthrough Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Passthrough Platform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Walkable.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Walkable.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEST-Movement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TEST-Movement.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FMOD/FMODbanks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FMOD/FMODbanks.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gravity/SwitchGravityWhenClose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gravity/SwitchGravityWhenClose.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/buildrecords/Desktop/Master.br" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/buildrecords/Desktop/Master.br" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/buildrecords/Desktop/Player.br" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/buildrecords/Desktop/Player.br" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{28f7c10d-0a96-4035-928b-3ae6b076d194}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{28f7c10d-0a96-4035-928b-3ae6b076d194}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{3ab9fe56-cb10-4b35-9caa-f36a592c12ca}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{3ab9fe56-cb10-4b35-9caa-f36a592c12ca}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{3ff2d4eb-977a-43ad-a569-5e0640977da9}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{3ff2d4eb-977a-43ad-a569-5e0640977da9}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{96f952b3-50fd-4433-98cb-01193683e67a}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{96f952b3-50fd-4433-98cb-01193683e67a}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{aaab04cf-5f7f-46dd-8b52-47b6daf19b39}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{aaab04cf-5f7f-46dd-8b52-47b6daf19b39}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{d5dfa686-4680-4a7a-8e7b-a26480b64dd7}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{d5dfa686-4680-4a7a-8e7b-a26480b64dd7}.pdc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{ebbc3c1d-a8fb-4a41-a825-b9608f8a141c}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{ebbc3c1d-a8fb-4a41-a825-b9608f8a141c}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +103,7 @@
       <workItem from="1721668739663" duration="7695000" />
       <workItem from="1721708502011" duration="5100000" />
       <workItem from="1721757647617" duration="2774000" />
-      <workItem from="1721766673659" duration="3480000" />
+      <workItem from="1721766673659" duration="5197000" />
     </task>
     <servers />
   </component>

@@ -108,6 +108,7 @@ public class PlayerMovement : MonoBehaviour
         if ( Input.GetKeyDown(JumpKey) && (AvailableJumps > 0 || coyoteTimer > 0))
         {
             CanJump = false;
+            FMODbanks.Instance.PlayJumpSFX(gameObject);     // Play jump sfx
             // Decrease the number of jumps and remove coyote time before jump
             --AvailableJumps;
             coyoteTimer = 0;
@@ -186,8 +187,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump()
     {
-        FMODbanks.Instance.PlayJumpSFX(gameObject);     // Play jump sfx
-
         // Add velocity to the direction gravity is pulling 
         rb.velocity += jumpDir*jumpForce;
     }
