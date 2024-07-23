@@ -7,7 +7,8 @@ public class SmoothCameraFollow : MonoBehaviour
     [SerializeField] private Transform target;
     
     // How fast the camera should reach the character
-    public float TimeToGetToTarget = 2;
+    public float TimeToGetToTarget = .1f;
+    public float RotationSpeed = 4f;
     
     //Variables to manipulate the center of the camera
     public float xOffset = 0f;
@@ -16,7 +17,6 @@ public class SmoothCameraFollow : MonoBehaviour
     
     // Velocity variable for SmoothDamp
     private Vector3 velocity = Vector3.zero;
-    private float angle_velocity = 0f;
 
     private void Start()
     {
@@ -24,16 +24,34 @@ public class SmoothCameraFollow : MonoBehaviour
     }
 
     private void LateUpdate()
-    {   // The position of the object to reach
-        Vector3 desiredPos = new Vector3(target.position.x + xOffset, target.position.y + yOffset, (-10 +zOffset));
-        float desiredAngle = target.transform.rotation.eulerAngles.z;
+    {
+        Vector3 desiredPos = new Vector3(target.position.x + xOffset, target.position.y + yOffset, (-10 +zOffset));;
         
+        // The position and rotation of the object to reach
+        switch (target.rotation.eulerAngles.z)
+        {
+            case 0f:
+                desiredPos = new Vector3(target.position.x + xOffset, target.position.y + yOffset, (-10 +zOffset));
+                break;
+            case 180f:
+                desiredPos = new Vector3(target.position.x - xOffset, target.position.y - yOffset, (-10 +zOffset));
+                break;
+            case 90f:
+                desiredPos = new Vector3(target.position.x - yOffset, target.position.y + xOffset, (-10 +zOffset));
+                break;
+            case 270f:
+                desiredPos = new Vector3(target.position.x + yOffset, target.position.y - xOffset, (-10 +zOffset));
+                break;
+        }
+        
+        Quaternion desiredRot = target.rotation;
+
         // Get camera follow 
         Vector3 newPos = Vector3.SmoothDamp(transform.position, desiredPos, ref velocity, TimeToGetToTarget);
-        float newAngle = Mathf.SmoothDamp(0f, desiredAngle, ref angle_velocity, TimeToGetToTarget);
+        Quaternion newRot = Quaternion.Slerp(transform.rotation, desiredRot, RotationSpeed * Time.deltaTime);
 
-        // Implement camera follow
+        // Implement camera follow and rotation
         transform.position = newPos;
-        transform.rotation = new Quaternion(0f, 0f, newAngle, 0f);
+        transform.rotation = newRot;
     }
 }
