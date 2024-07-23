@@ -592,7 +592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpKey: 32
   DashKey: 109
-  NumberOfJumpsForPlayer: 2
+  NumberOfJumpsForPlayer: 1
   gravity: 35
   maxSlopeAngle: 45
   WalkSpeed: 8
