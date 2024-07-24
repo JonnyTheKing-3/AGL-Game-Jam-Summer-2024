@@ -13,7 +13,7 @@ public class Shake : MonoBehaviour
     [SerializeField] private float intensity = 1f;
     
     // Only call one of the two methods at a time. If you call one method before 
-    [SerializeField] private bool StartStationaryShake = false;
+    public bool StartStationaryShake = false;
     
     // If either bool turns true, start the respective camera shake method
     private void Update()

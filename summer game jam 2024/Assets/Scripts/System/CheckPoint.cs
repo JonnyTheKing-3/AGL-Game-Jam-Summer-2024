@@ -18,7 +18,7 @@ public class CheckPoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Entered Checkpoint");
-            gm.CheckpointReached(gameObject.transform);
+            gm.CheckpointReached(gameObject.transform, other.transform.eulerAngles.z);
         }
     }
 }

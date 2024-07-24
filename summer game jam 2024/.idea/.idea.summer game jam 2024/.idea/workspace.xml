@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab6069b7-e844-40f4-9317-bf4990b4e4ff" name="Changes" comment="" />
+    <list default="true" id="ab6069b7-e844-40f4-9317-bf4990b4e4ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Passthrough Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Passthrough Platform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shake.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shake.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/CheckPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/CheckPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/GameManager.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +27,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/SwitchGravityWhenClose.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platforms/MovingPlatformManaging.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platforms/PassthroughPlatform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platforms/Trigger Moving platform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shake.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SwitchScenesIfTouched.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/QuitOnScreenClick.cs" root0="FORCE_HIGHLIGHTING" />
@@ -103,7 +112,7 @@
       <workItem from="1721766673659" duration="5197000" />
       <workItem from="1721782917725" duration="11195000" />
       <workItem from="1721795947162" duration="120000" />
-      <workItem from="1721847310414" duration="4571000" />
+      <workItem from="1721847310414" duration="6930000" />
     </task>
     <servers />
   </component>
