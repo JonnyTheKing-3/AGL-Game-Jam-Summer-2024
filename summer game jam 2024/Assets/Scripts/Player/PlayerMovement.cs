@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("REFERENCES")]
     private Rigidbody2D rb;
     private ConstantForce2D myconstantForce;
-    private FMODbanks FmodBanks;
+    // private FMODbanks FmodBanks;
 
     [Header("PLAYER SETTINGS")] 
     public KeyCode JumpKey;
@@ -108,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
         if ( Input.GetKeyDown(JumpKey) && (AvailableJumps > 0 || coyoteTimer > 0) && CanJump)
         {
             CanJump = false;
-            FMODbanks.Instance.PlayJumpSFX(gameObject);     // Play jump sfx
+            // FMODbanks.Instance.PlayJumpSFX(gameObject);     // Play jump sfx
             // Decrease the number of jumps and remove coyote time before jump
             --AvailableJumps;
             coyoteTimer = 0;
@@ -170,8 +170,16 @@ public class PlayerMovement : MonoBehaviour
         moveX = Input.GetAxisRaw("Horizontal");
         moveY = Input.GetAxisRaw("Vertical");
 
-        if (moveX == 0 && Mathf.Abs(lastmoveX) == 1) { FMODbanks.Instance.StopHoverSFX(); }       // If the player stopped and was moving, stop the hover sound
-        else if (Mathf.Abs(moveX) == 1 && lastmoveX == 0) { FMODbanks.Instance.PlayHoverSFX(); }  // When the player first moves, play the hover sound
+        if (moveX == 0 && Mathf.Abs(lastmoveX) == 1)
+        { 
+            // FMODbanks.Instance.StopHoverSFX();
+        }
+        // If the player stopped and was moving, stop the hover sound
+        else if (Mathf.Abs(moveX) == 1 && lastmoveX == 0)
+        {
+            // FMODbanks.Instance.PlayHoverSFX();
+        }  
+        // When the player first moves, play the hover sound
         lastmoveX = moveX; // Update lastmoveX
 
         // If player presses the dash key, make the target speed be the dash speed

@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9167781855552378784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5264341663959470613}
+  - component: {fileID: 2526045158538024678}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5264341663959470613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167781855552378784}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2526045158538024678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167781855552378784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6956b0b2254dc09488e9e377eb3b648a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpSFX:
+    Guid:
+      Data1: 2105520386
+      Data2: 1214650108
+      Data3: 2021525401
+      Data4: 761042566
+    Path: event:/Player/Jump
+  hoverSFX:
+    Guid:
+      Data1: 552671730
+      Data2: 1125356259
+      Data3: -1094687041
+      Data4: 852442116
+    Path: event:/Player/Hover (Walk)
+  DeathByCrushinSFX:
+    Guid:
+      Data1: -1482292822
+      Data2: 1206942486
+      Data3: 1275049916
+      Data4: -1381273625
+    Path: event:/Player/Death By Crushing
+  GravitySwitchSFX:
+    Guid:
+      Data1: 545386248
+      Data2: 1297369073
+      Data3: -768900938
+      Data4: -156455597
+    Path: event:/Player/Gravity Switch
+  platformFlyingSFX:
+    Guid:
+      Data1: -1830025522
+      Data2: 1335051933
+      Data3: -1735855693
+      Data4: 1880335820
+    Path: event:/Platforms/Platform Flying
