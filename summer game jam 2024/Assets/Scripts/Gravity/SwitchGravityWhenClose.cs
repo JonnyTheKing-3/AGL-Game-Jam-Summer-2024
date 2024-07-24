@@ -20,7 +20,11 @@ public class SwitchGravityWhenClose : MonoBehaviour
         // If the player touches this trigger's collider, start the rotation coroutine
         if (other.gameObject.CompareTag("Player"))
         {
-            FMODbanks.Instance.PlayGravitySwitchSFX(gameObject);     // Play jump sfx
+            if ((float) Gravitational_Pull != other.transform.rotation.eulerAngles.z)
+            {
+                FMODbanks.Instance.PlayGravitySwitchSFX(gameObject);     // Play jump sfx
+            }
+            
             float targetAngle = (float)Gravitational_Pull;
             StartCoroutine(RotatePlayer(other.transform, targetAngle));
         }

@@ -997,6 +997,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4337218632161972720, guid: 29f80eaf084e68049976a03557494b15, type: 3}
+      propertyPath: gravity
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337218632161972720, guid: 29f80eaf084e68049976a03557494b15, type: 3}
+      propertyPath: DashSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337218632161972720, guid: 29f80eaf084e68049976a03557494b15, type: 3}
+      propertyPath: jumpForce
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337218632161972720, guid: 29f80eaf084e68049976a03557494b15, type: 3}
+      propertyPath: acceleration
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337218632161972720, guid: 29f80eaf084e68049976a03557494b15, type: 3}
+      propertyPath: deceleration
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7955304389321499069, guid: 29f80eaf084e68049976a03557494b15, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1097,6 +1117,18 @@ PrefabInstance:
     - target: {fileID: 5084086726711124959, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
       propertyPath: m_Name
       value: Passthrough Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913763529361282499, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913763529361282499, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660172551949633407, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
+      propertyPath: IWantThisPlatformToMove
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
