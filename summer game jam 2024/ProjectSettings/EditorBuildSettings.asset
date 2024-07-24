@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 8006f6de71a0a3b4ea9ebd0ec6acf481
+  - enabled: 1
+    path: Assets/Scenes/TEST-Movement.unity
+    guid: 2eeac7ac57c4c024da2ca75457992d02
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 4b1f4f8765c325344bf9e3677eb3f1e1
+  - enabled: 1
+    path: Assets/Scenes/Win Screen.unity
+    guid: d82f1f2028a48f74ab551028bf201c80
   m_configObjects: {}
