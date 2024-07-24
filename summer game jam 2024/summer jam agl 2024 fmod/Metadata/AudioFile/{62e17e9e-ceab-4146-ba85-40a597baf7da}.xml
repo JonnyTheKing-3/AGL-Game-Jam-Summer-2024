@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{62e17e9e-ceab-4146-ba85-40a597baf7da}">
+		<property name="assetPath">
+			<value>Sea Of The Mind (RUN).mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>76.512653061224484</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16ca3294-9a61-45d3-8252-30b07ab235ac}</destination>
+		</relationship>
+	</object>
+</objects>
