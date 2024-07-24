@@ -7,8 +7,6 @@
     <list default="true" id="ab6069b7-e844-40f4-9317-bf4990b4e4ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEST-Movement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TEST-Movement.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Platforms/MovingPlatformManaging.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Platforms/MovingPlatformManaging.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +15,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/SwitchGravityWhenClose.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platforms/MovingPlatformManaging.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platforms/PassthroughPlatform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RespawnPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shake.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2jZtx2ntI38IUtCm23iuNvvmf51" />
@@ -99,7 +99,7 @@
       <workItem from="1721708502011" duration="5100000" />
       <workItem from="1721757647617" duration="2774000" />
       <workItem from="1721766673659" duration="5197000" />
-      <workItem from="1721782917725" duration="821000" />
+      <workItem from="1721782917725" duration="3062000" />
     </task>
     <servers />
   </component>
