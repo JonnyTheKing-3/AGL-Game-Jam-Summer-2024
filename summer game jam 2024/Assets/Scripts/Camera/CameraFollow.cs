@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class SmoothCameraFollow : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
     // Target for the camera to follow. USUALLY IS PLAYER, SO DRAG PLAYER INTO THIS SPOT
     [SerializeField] private Transform target;

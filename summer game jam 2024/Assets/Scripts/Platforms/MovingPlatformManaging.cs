@@ -11,10 +11,12 @@ public class MovingPlatformManaging : MonoBehaviour
      *      3) SET THE POSITION OF destination TO WHEREVER YOU WANT THE PLATFORM TO MOVE TO
      */
     
+    // Regulate the speed of the platform throughout the travel
+    [SerializeField] private AnimationCurve curve;
     public Transform OriginalSpot;
     public bool IWantThisPlatformToMove = false;
     public bool StartMoving = false;
-    public float travelSpeed = 0.5f;
+    public float duration = 0.5f;
 
     void Start()
     {
@@ -36,19 +38,23 @@ public class MovingPlatformManaging : MonoBehaviour
 
     public IEnumerator MovePlatform()
     {
-        // initializing temporary placeholders for lerp
+        // Remembers the starting position before shake
         Vector3 initialPos = OriginalSpot.position;
         Vector3 targetPos = transform.position;
-        float elapsedTime = 0;
+        float elapsedTime = 0f;
 
-        while (elapsedTime < 1)
+        // Keep "shaking camera" for desired duration
+        while (elapsedTime < duration)
         {
-            OriginalSpot.position = Vector3.Lerp(initialPos, targetPos, elapsedTime);
-            elapsedTime += Time.deltaTime * travelSpeed;
+            // Strength variable is used as a regulator for the intensity of the shake
+            float strength = curve.Evaluate(elapsedTime / duration);
+            OriginalSpot.position = Vector3.Lerp(initialPos, targetPos, elapsedTime * strength);
+
+            elapsedTime += Time.deltaTime;
+            
             yield return null;
         }
 
-        // Ensure the player ends up at the exact target rotation
         OriginalSpot.position = targetPos;
     }
 }
