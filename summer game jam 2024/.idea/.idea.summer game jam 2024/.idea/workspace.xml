@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab6069b7-e844-40f4-9317-bf4990b4e4ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEST-Movement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TEST-Movement.unity" afterDir="false" />
-    </list>
+    <list default="true" id="ab6069b7-e844-40f4-9317-bf4990b4e4ff" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +96,7 @@
       <workItem from="1721708502011" duration="5100000" />
       <workItem from="1721757647617" duration="2774000" />
       <workItem from="1721766673659" duration="5197000" />
-      <workItem from="1721782917725" duration="3062000" />
+      <workItem from="1721782917725" duration="3664000" />
     </task>
     <servers />
   </component>
