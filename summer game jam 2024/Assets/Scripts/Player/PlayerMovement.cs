@@ -105,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
         else { coyoteTimer -= Time.deltaTime; }
         
         // Jump if the player pressed jump button AND still has available jumps
-        if ( Input.GetKeyDown(JumpKey) && (AvailableJumps > 0 || coyoteTimer > 0))
+        if ( Input.GetKeyDown(JumpKey) && (AvailableJumps > 0 || coyoteTimer > 0) && CanJump)
         {
             CanJump = false;
             FMODbanks.Instance.PlayJumpSFX(gameObject);     // Play jump sfx
