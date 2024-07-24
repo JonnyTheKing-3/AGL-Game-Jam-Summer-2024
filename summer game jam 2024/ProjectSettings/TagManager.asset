@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - GameManager
+  - point A
+  - point B
   layers:
   - Default
   - TransparentFX
