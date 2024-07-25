@@ -332,6 +332,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - Music
   - Platforms
   - Player
   BanksToLoad: []

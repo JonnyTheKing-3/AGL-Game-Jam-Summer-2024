@@ -17,8 +17,7 @@ public class CheckPoint : MonoBehaviour
         // If the player touched the pitfall, respawn
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Entered Checkpoint");
-            gm.CheckpointReached(gameObject.transform);
+            gm.CheckpointReached(gameObject.transform, other.transform.eulerAngles.z);
         }
     }
 }

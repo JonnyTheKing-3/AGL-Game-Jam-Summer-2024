@@ -7,7 +7,9 @@ public class SwitchScenesIfTouched : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            FMODbanks.Instance.OnSceneSwitch();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Destroy(gameObject);
         }
     }
 }

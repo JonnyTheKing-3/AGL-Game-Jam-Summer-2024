@@ -22,7 +22,7 @@ public class SwitchGravityWhenClose : MonoBehaviour
         {
             if ((float) Gravitational_Pull != other.transform.rotation.eulerAngles.z)
             {
-                // FMODbanks.Instance.PlayGravitySwitchSFX(gameObject);     // Play jump sfx
+                FMODbanks.Instance.PlayGravitySwitchSFX(gameObject);     // Play jump sfx
             }
             
             float targetAngle = (float)Gravitational_Pull;

@@ -79,3 +79,24 @@ MonoBehaviour:
       Data3: -1735855693
       Data4: 1880335820
     Path: event:/Platforms/Platform Flying
+  Music:
+    Guid:
+      Data1: -989298080
+      Data2: 1328246046
+      Data3: 1077831315
+      Data4: 1851964
+    Path: event:/Music
+  PlatformFlying:
+    Guid:
+      Data1: -1830025522
+      Data2: 1335051933
+      Data3: -1735855693
+      Data4: 1880335820
+    Path: event:/Platforms/Platform Flying
+  Victory:
+    Guid:
+      Data1: -658899395
+      Data2: 1252454670
+      Data3: -513533030
+      Data4: 1381145821
+    Path: event:/Music/Victory

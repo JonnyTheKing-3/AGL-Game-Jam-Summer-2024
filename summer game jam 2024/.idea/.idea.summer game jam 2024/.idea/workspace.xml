@@ -4,13 +4,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab6069b7-e844-40f4-9317-bf4990b4e4ff" name="Changes" comment="" />
+    <list default="true" id="ab6069b7-e844-40f4-9317-bf4990b4e4ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AudioManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chase and Self-destruct.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chase and Self-destruct.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Checkpoint_Respawn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Checkpoint_Respawn.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GoalPost.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GoalPost.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player's friend.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player's friend.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Walkable.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Walkable.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/moving enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/moving enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Win Screen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Win Screen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyChaseAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyChaseAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/GoombaMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/GoombaMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FMOD/FMODbanks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FMOD/FMODbanks.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FollowPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FollowPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gravity/SwitchGravityWhenClose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gravity/SwitchGravityWhenClose.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shake.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shake.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SwitchScenesIfTouched.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SwitchScenesIfTouched.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/CheckPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/CheckPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/DeathByPitfall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/DeathByPitfall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/QuitOnScreenClick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/System/QuitOnScreenClick.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_front_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_front_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/buildrecords/Desktop/Master.br" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/buildrecords/Desktop/Master.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/buildrecords/Desktop/Platforms.br" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/buildrecords/Desktop/Platforms.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/buildrecords/Desktop/Player.br" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/buildrecords/Desktop/Player.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{27bed4c1-224a-4647-a503-5e28f4e795b1}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{27bed4c1-224a-4647-a503-5e28f4e795b1}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{28f7c10d-0a96-4035-928b-3ae6b076d194}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{28f7c10d-0a96-4035-928b-3ae6b076d194}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{3ab9fe56-cb10-4b35-9caa-f36a592c12ca}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{3ab9fe56-cb10-4b35-9caa-f36a592c12ca}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{3ff2d4eb-977a-43ad-a569-5e0640977da9}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{3ff2d4eb-977a-43ad-a569-5e0640977da9}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{62e17e9e-ceab-4146-ba85-40a597baf7da}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{62e17e9e-ceab-4146-ba85-40a597baf7da}.pdc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{7cfca1b9-a572-4146-b5ff-a3dcbaf30404}.pdc" beforeDir="false" afterPath="$PROJECT_DIR$/summer jam agl 2024 fmod/.cache/{7cfca1b9-a572-4146-b5ff-a3dcbaf30404}.pdc" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/DestroyWhenFriendIsTouched.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/GoombaMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/KeepChildInPlace.cs" root0="FORCE_HIGHLIGHTING" />
@@ -19,6 +58,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gravity/SwitchGravityWhenClose.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platforms/MovingPlatformManaging.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platforms/PassthroughPlatform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Platforms/Trigger Moving platform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/QuitButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shake.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SwitchScenesIfTouched.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/QuitOnScreenClick.cs" root0="FORCE_HIGHLIGHTING" />
@@ -103,7 +144,8 @@
       <workItem from="1721766673659" duration="5197000" />
       <workItem from="1721782917725" duration="11195000" />
       <workItem from="1721795947162" duration="120000" />
-      <workItem from="1721847310414" duration="4571000" />
+      <workItem from="1721847310414" duration="7277000" />
+      <workItem from="1721879374023" duration="9882000" />
     </task>
     <servers />
   </component>
