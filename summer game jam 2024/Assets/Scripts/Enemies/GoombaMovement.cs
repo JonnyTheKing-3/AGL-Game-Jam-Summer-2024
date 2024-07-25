@@ -12,15 +12,18 @@ public class GoombaMovement : MonoBehaviour
     public GameManager gm;
     public float distanceA;
     public float distanceB;
+    public Transform player;
     
     void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         transform.position = pointA.position;
         ReachedPointB = false;
     }
     private void Update()
     {
+        transform.rotation = player.transform.rotation;
         if (ReachedPointB)
         {
             //Vector2 direction = player.transform.position - transform.position;
@@ -37,16 +40,25 @@ public class GoombaMovement : MonoBehaviour
         // Using a small tolerance for position comparison
         distanceA = Vector2.Distance(transform.position, pointA.position);
         
-        if (distanceA < 0.1f)
+        if (distanceA < 0.1f && ReachedPointB)
         {
             ReachedPointB = false;
+            Flip();
         }
 
         distanceB = Vector2.Distance(transform.position, pointB.position);
-        if (distanceB < 0.1f)
+        if (distanceB < 0.1f && !ReachedPointB)
         {
             ReachedPointB = true;
+            Flip();
         }
+    }
+
+    private void Flip()
+    {
+        Vector3 localScale = transform.localScale; 
+        localScale.x *= -1f; 
+        transform.localScale = localScale;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

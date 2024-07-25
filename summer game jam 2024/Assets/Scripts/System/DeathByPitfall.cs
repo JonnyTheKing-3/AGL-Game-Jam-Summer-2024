@@ -18,7 +18,6 @@ public class DeathByPitfall : MonoBehaviour
         // If the player touched the pitfall, respawn
         if (other.CompareTag("Player"))
         {
-            Debug.Log("PITFALL");
             gm.Respawn();
         }
     }

@@ -42,7 +42,6 @@ public class EnemyChasingAI : MonoBehaviour
         // this enemy touches the plater, "Self destruct" (damage the player a lot and destroy the object)
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Touched player");
             gm.Respawn();
             transform.position = ogPos;
         }

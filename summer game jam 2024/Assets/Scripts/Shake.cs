@@ -18,7 +18,12 @@ public class Shake : MonoBehaviour
     // If either bool turns true, start the respective camera shake method
     private void Update()
     {
-        if (StartStationaryShake) { StartStationaryShake = false; StartCoroutine(StationaryShaking(duration, intensity)); }
+        if (StartStationaryShake)
+        {
+            StartStationaryShake = false; 
+            // FMODbanks.Instance.PlayPlatformFlyingSFX(gameObject); 
+            StartCoroutine(StationaryShaking(duration, intensity));
+        }
     }
     
 

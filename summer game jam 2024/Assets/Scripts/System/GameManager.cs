@@ -8,19 +8,26 @@ public class GameManager : MonoBehaviour
     public Transform respawn_point = null;
     public Transform player;
     public float playerRot;
+    public static bool GotFriend = false;
 
     void Start()
     {
+        
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        GotFriend = false;
     }
     
     public void Respawn()
     {
         // If the player hasn't reached a checkpoint, reload the scene. Otherwise, spawn in the checkpoint
-        if (respawn_point == null) {Debug.Log("Reload"); SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); }
-        else                       
+        if (respawn_point == null)
         {
-            Debug.Log("Respawn"); 
+            FMODbanks.Instance.OnDestroy();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        else
+        {
+            FMODbanks.Instance.DeathSound();
             Vector3 newRotation = player.rotation.eulerAngles;
             newRotation.z = playerRot;
             player.rotation = Quaternion.Euler(newRotation);
@@ -32,10 +39,8 @@ public class GameManager : MonoBehaviour
 
     public void CheckpointReached(Transform checkpoint, float plyr)
     {
-        Debug.Log("Updating Checkpoint");
         // Update checkpoint
         respawn_point = checkpoint;
         playerRot = plyr;
-        Debug.Log("Player rotation = " + playerRot);
     }
 }
