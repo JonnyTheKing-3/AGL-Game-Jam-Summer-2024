@@ -11030,6 +11030,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   animator: {fileID: 0}
+--- !u!61 &382814284
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382814270}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.53, y: 7.18}
+    newSize: {x: 5.53, y: 7.18}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.53, y: 7.18}
+  m_EdgeRadius: 0
 --- !u!1001 &392220048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42028,6 +42073,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1076321646483032287, guid: 29f80eaf084e68049976a03557494b15, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4337218632161972720, guid: 29f80eaf084e68049976a03557494b15, type: 3}
       propertyPath: RayForGroundCheck
       value: 1.3
@@ -42125,6 +42174,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7955304389321499069, guid: 29f80eaf084e68049976a03557494b15, type: 3}
       insertIndex: -1
       addedObject: {fileID: 382814278}
+    - targetCorrespondingSourceObject: {fileID: 7955304389321499069, guid: 29f80eaf084e68049976a03557494b15, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 382814284}
   m_SourcePrefab: {fileID: 100100000, guid: 29f80eaf084e68049976a03557494b15, type: 3}
 --- !u!4 &1423321293 stripped
 Transform:
@@ -79507,6 +79559,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -3.47
       objectReference: {fileID: 0}
+    - target: {fileID: 4514195485980094174, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.44870713
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514195485980094174, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5201711
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514195485980094174, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514195485980094174, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.010209069
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514195485980094174, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.28
+      objectReference: {fileID: 0}
     - target: {fileID: 5084086726711124959, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
       propertyPath: m_Name
       value: Passthrough Platform
@@ -79537,11 +79609,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5913763529361282499, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 3.05
       objectReference: {fileID: 0}
     - target: {fileID: 5913763529361282499, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5
+      value: -5.02
       objectReference: {fileID: 0}
     - target: {fileID: 6098493796876697781, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
       propertyPath: duration
@@ -79599,7 +79671,8 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: e63bfc9ba90f8ad43ae4deb202cd8d78, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5622441107501224997, guid: 2951eb9cfd017b447a19f617ae713c1a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

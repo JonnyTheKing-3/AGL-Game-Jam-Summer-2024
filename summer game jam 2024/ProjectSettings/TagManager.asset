@@ -7,6 +7,8 @@ TagManager:
   - GameManager
   - point A
   - point B
+  - Platform
+  - Platform Destination
   layers:
   - Default
   - TransparentFX

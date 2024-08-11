@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("REFERENCES")]
     private Rigidbody2D rb;
     private ConstantForce2D myconstantForce;
-    // private FMODbanks FmodBanks;
+    public GameManager gm;
 
     [Header("PLAYER SETTINGS")] 
     public KeyCode JumpKey;
@@ -48,6 +48,8 @@ public class PlayerMovement : MonoBehaviour
     public bool CoyoteAvailable;
     public float SurfaceAngle;
     public bool IsOnSlope = false;
+    public bool MovingPlatformTouching = false;
+    public bool PlatformDestinationTouching = false;
     
     // Ground checks for jumping
     private LayerMask groundLayer;
@@ -72,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         myconstantForce = GetComponent<ConstantForce2D>();
         groundLayer = LayerMask.GetMask("Walkable");
+        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         AvailableJumps = NumberOfJumpsForPlayer;
         CanJump = true;
@@ -84,6 +87,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (MovingPlatformTouching && PlatformDestinationTouching)
+        {
+            Squash();
+        }
+        
         PlayerInput();
         // FaceInputDirection();
         SetUpAppropriateGravityAndJumpDirectionAndVelocity();
@@ -275,5 +283,28 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 GetSlopeDirection()
     {
         return Vector3.ProjectOnPlane(Vector2.right, slopeHit.normal).normalized;
+    }
+
+    
+    // For squash effect. Works with platform SquashAreaTrigger script
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            MovingPlatformTouching = true;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            MovingPlatformTouching = false;
+        }
+    }
+
+    private void Squash()
+    {
+        Debug.Log("Squash");
+        gm.Respawn();
     }
 }
