@@ -304,7 +304,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Squash()
     {
-        Debug.Log("Squash");
+        // Debug.Log("Squash");
         gm.Respawn();
     }
 }

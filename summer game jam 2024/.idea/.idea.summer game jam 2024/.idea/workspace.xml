@@ -5,9 +5,340 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab6069b7-e844-40f4-9317-bf4990b4e4ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.summer game jam 2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/Main menu.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/Main menu/Blueish background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/Main menu/Blueish background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/Main menu/Falling around menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/Main menu/Falling around menu.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/Main menu/Falling around title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/Main menu/Falling around title.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/Main menu/play button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/Main menu/play button.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bg sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bg sprites/cutballoon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bg sprites/cutballoon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bg sprites/cutcloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bg sprites/cutcloud.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bg sprites/cutcloud2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bg sprites/cutcloud2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bg sprites/cutmoon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bg sprites/cutmoon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bg sprites/cutstar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bg sprites/cutstar.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bgWIP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bgWIP.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bgwithskyassets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bgwithskyassets.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bgwithskyassets2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/bgwithskyassets2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/background/cutouts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/endgame.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/endgame/endless_rizz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/endgame/endless_rizz.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/endgame/sunset_feeling_romantical.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/endgame/sunset_feeling_romantical.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_flying/enemy_flying_8.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/IMG_4436.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/IMG_4436.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/ezgif-2-b71abc73db-gif-im.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/ezgif-2-b71abc73db-gif-im.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_0_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_0_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_1_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_1_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_2_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_2_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_3_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_3_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_4_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_4_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_5_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_5_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_6_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_6_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_7_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/flyingguy/flyingguy_sprites/frame_7_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/IMG_4434.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/IMG_4434.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/ezgif-2-f043462b6f-gif-im.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/ezgif-2-f043462b6f-gif-im.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_0_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_0_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_1_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_1_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_2_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_2_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_3_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_3_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_4_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_4_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_5_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_5_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_6_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_6_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_7_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_sprites/walkingguy/walkingguy_sprites/frame_7_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_walk/enemy_walk_8.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float anim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float anim.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/New Ground.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe04.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe05.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe06.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe07.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe08.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe09.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe10.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe11.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe12.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe13.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe14.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe15.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_float/float frames/fframe_apngframe16.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_idle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_idle/idle anim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_idle/idle anim.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_idle/idle frames.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_idle/idle frames.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_idle/idle frames.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_idle/idle frames/frame_apngframe1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_idle/idle frames/frame_apngframe1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_idle/idle frames/frame_apngframe2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/escort_sprites/escort_idle/idle frames/frame_apngframe2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_death/Mc_death_frame7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_backward_L_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_backward_L_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_backward_L_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_backward_L_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_backward_L_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_backward_L_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_backward_L_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_backward_L_4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_foward_R_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_foward_R_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_foward_R_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_foward_R_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_foward_R_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_foward_R_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_foward_R_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_float/Mc_float_foward_R_4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_back_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_back_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_back_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_back_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_back_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_back_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_back_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_back_4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_front_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_front_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_front_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_front_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_front_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/Mc_idle_front_4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/mic_idle 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_idle/mic_idle 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/IMG_4427.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/IMG_4427.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/ezgif-2-f894025e42-gif-im.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/ezgif-2-f894025e42-gif-im.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_00_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_00_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_01_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_01_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_02_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_02_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_03_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_03_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_04_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_04_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_05_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_05_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_06_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_06_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_07_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_07_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_08_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_08_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_09_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_09_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_10_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_10_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_11_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_11_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_12_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_12_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_13_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_13_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_14_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_14_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_15_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_15_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_16_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_16_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_17_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_17_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_18_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_18_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_19_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_19_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_20_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_20_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_21_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_21_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_22_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_22_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_23_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_23_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_24_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_24_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_25_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_25_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_26_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_26_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_27_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_27_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_28_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_28_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_29_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_29_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_30_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_30_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_31_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_31_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_32_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_32_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_33_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_ded/mc_ded_frames/frame_33_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/IMG_4425.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/IMG_4425.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/ezgif-2-2db9bd67cb-gif-im.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/ezgif-2-2db9bd67cb-gif-im.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames/frame_0_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames/frame_0_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames/frame_1_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames/frame_1_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames/frame_2_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames/frame_2_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames/frame_3_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames/frame_3_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames/frame_4_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames/frame_4_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames/frame_5_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_idle/mc_idle_frames/frame_5_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/IMG_4423.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/IMG_4423.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/ezgif-2-c07dcb2790-gif-im.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/ezgif-2-c07dcb2790-gif-im.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/mc_run_L_frames.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/mc_run_L_frames/frame_0_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/mc_run_L_frames/frame_0_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/mc_run_L_frames/frame_1_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/mc_run_L_frames/frame_1_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/mc_run_L_frames/frame_2_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/mc_run_L_frames/frame_2_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/mc_run_L_frames/frame_3_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_L/mc_run_L_frames/frame_3_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/IMG_4421.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/IMG_4421.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/ezgif-2-b1b94d929c-gif-im.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/ezgif-2-b1b94d929c-gif-im.zip.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/mc_run_R_frames.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/mc_run_R_frames/frame_0_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/mc_run_R_frames/frame_0_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/mc_run_R_frames/frame_1_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/mc_run_R_frames/frame_1_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/mc_run_R_frames/frame_2_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/mc_run_R_frames/frame_2_delay-0.08s.gif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/mc_run_R_frames/frame_3_delay-0.08s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mc_sprites/mc_run_R/mc_run_R_frames/frame_3_delay-0.08s.gif.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +446,7 @@
       <workItem from="1723352590021" duration="1640000" />
       <workItem from="1723405977276" duration="3332000" />
       <workItem from="1723424745096" duration="919000" />
+      <workItem from="1737400700411" duration="741000" />
     </task>
     <servers />
   </component>
