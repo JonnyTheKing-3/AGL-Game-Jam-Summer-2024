@@ -22,7 +22,7 @@ public class SquashAreaTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Enter");
-            other.GetComponent<PlayerMovement>().PlatformDestinationTouching = true;
+            other.GetComponent<SquashDetection>().PlatformDestinationTouching = true;
         }
     }
     public void OnTriggerExit2D(Collider2D other)
@@ -30,7 +30,7 @@ public class SquashAreaTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Exit");
-            other.GetComponent<PlayerMovement>().PlatformDestinationTouching = false;
+            other.GetComponent<SquashDetection>().PlatformDestinationTouching = false;
         }
     }
 }

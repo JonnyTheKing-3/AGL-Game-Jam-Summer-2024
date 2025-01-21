@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 5287661388661412980}
   - component: {fileID: 6098493796876697781}
   m_Layer: 3
-  m_Name: Passthrough Platform
+  m_Name: Moving Platform
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

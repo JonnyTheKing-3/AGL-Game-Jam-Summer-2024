@@ -9,24 +9,18 @@ public class PlayerMovement : MonoBehaviour
     [Header("REFERENCES")]
     private Rigidbody2D rb;
     private ConstantForce2D myconstantForce;
-    public GameManager gm;
 
     [Header("PLAYER SETTINGS")] 
     public KeyCode JumpKey;
-    public KeyCode DashKey;
     public int NumberOfJumpsForPlayer;
     [SerializeField] private float JumpDelayReset = 0.2f;
 
     [Header("CHARACTER SETTINGS")] 
     public float gravity;
-
-    [Header("SLOPE STUFF")]
-    public float maxSlopeAngle = 45f;
-    private RaycastHit2D slopeHit;
+    public float CappedSpeed;
 
     [Header("MOVEMENT VARIABLES")]
     [SerializeField] private float WalkSpeed;
-    [SerializeField] private float DashSpeed;
     [SerializeField] private float jumpForce;
     
     [Header("MOVEMENT SMOOTHING")]
@@ -42,39 +36,32 @@ public class PlayerMovement : MonoBehaviour
     [Header("STATUS ON PLAYER")] 
     public float moveX;
     public float moveY;
-    public float DesiredSpeed;
     public bool Grounded;
     public int AvailableJumps;
     public bool CoyoteAvailable;
-    public float SurfaceAngle;
-    public bool IsOnSlope = false;
-    public bool MovingPlatformTouching = false;
-    public bool PlatformDestinationTouching = false;
-    
-    // Ground checks for jumping
+
+    [Header("GROUNDING")]
     private LayerMask groundLayer;
-    public float RayForGroundCheck = 1.3f; // Might need to change this variable depending on object
+    public float RayForGroundCheck = 1.3f; // Might need to change this variable depending on object. EDIT: It's now .87f
     private bool CanJump = true;
-    // Used for passthrough platform script
-    public bool OnDelay = false;
-    
-    // flip variable to see what direction the player is facing
-    private bool isFacingRight = true;
-    
-    // Keeps track of if the player was moving
-    public float lastmoveX;
+
+    [Header("EXTRA")]
+    public float lastmoveX;                  // Keeps track of if the player was moving
+    public float xForCalculateMovement = 0;
 
     // Keeps track of the appropriate jump direction based on gravity pull
     public Vector2 jumpDir;
-
-    public float xForCalculateMovement = 0;
+    [SerializeField] private float hitpointIncrement;
+    public enum Direction
+    {
+        up, down, left, right
+    }
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         myconstantForce = GetComponent<ConstantForce2D>();
         groundLayer = LayerMask.GetMask("Walkable");
-        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         AvailableJumps = NumberOfJumpsForPlayer;
         CanJump = true;
@@ -87,13 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (MovingPlatformTouching && PlatformDestinationTouching)
-        {
-            Squash();
-        }
-        
         PlayerInput();
-        // FaceInputDirection();
         SetUpAppropriateGravityAndJumpDirectionAndVelocity();
 
         // For debugging coyote time
@@ -143,7 +124,9 @@ public class PlayerMovement : MonoBehaviour
         // If the player is past the coyote time and didn't jump, then make the player have only one jump
         if (coyoteTimer <= 0 && AvailableJumps == NumberOfJumpsForPlayer && NumberOfJumpsForPlayer < 2)
         {
-            AvailableJumps = 1;
+            // If the player had multiple jumps, let's default to one, but if they had only one jump, then do 0 jumps
+            if (NumberOfJumpsForPlayer == 1) { AvailableJumps = 0; }
+            else { AvailableJumps = 1; }
         }
     }
 
@@ -151,27 +134,15 @@ public class PlayerMovement : MonoBehaviour
     {
         // Check if player is grounded and if their on a slope
         Grounded = IsGrounded();
-        IsOnSlope = OnSlope();
 
-        // MOVEMENT
-        //---------
+        // Stick player to the ground
+        if (Grounded && CanJump) { StickPlayerToGround(); }
+        
+        // if player is falling, limit the fall speed
+        if (!Grounded) { CapFallSpeed(); }
+        
         // Grounded Movement
-        if (!IsOnSlope)
-        {
-            rb.AddForce(CalculateMovement() * transform.right);
-        }
-        
-        // Slope Movement
-        else if (IsOnSlope)
-        {
-            rb.AddForce(CalculateMovement() * GetSlopeDirection());
-        }
-        
-        // Air Movement
-        // else if (!Grounded)
-        // {
-        //     rb.AddForce((CalculateMovement() * AirSpeed) * Vector2.right);
-        // }
+        rb.AddForce(CalculateMovement() * transform.right);
     }
 
     public void PlayerInput()
@@ -190,16 +161,7 @@ public class PlayerMovement : MonoBehaviour
         }  
         // When the player first moves, play the hover sound
         lastmoveX = moveX; // Update lastmoveX
-
-        // If player presses the dash key, make the target speed be the dash speed
-        if (Input.GetKey(DashKey))
-        {
-            DesiredSpeed = DashSpeed;
-        }
-        else
-        {
-            DesiredSpeed = WalkSpeed;
-        }
+        
     }
 
     public void Jump()
@@ -211,7 +173,7 @@ public class PlayerMovement : MonoBehaviour
     private float CalculateMovement()
     {
         // Speed of player
-        float targetSpeed = moveX * DesiredSpeed;
+        float targetSpeed = moveX * WalkSpeed;
         
         // Calculate the difference of the speed the player wants to go by
         // how fast the player is already going
@@ -225,28 +187,12 @@ public class PlayerMovement : MonoBehaviour
         // Lastly, preserve the direction
         return Mathf.Pow(Mathf.Abs(speedDif) * accelRate, velPower) * Math.Sign(speedDif);
     }
-    
-    private void FaceInputDirection()
-    {
-        if (isFacingRight && moveX < 0 || !isFacingRight && moveX > 0f)
-        {
-            isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
-        }
-    }
 
     public bool IsGrounded()
     {
         // This portion is to avoid extra impulse player gets when they jump on to the platform when they reach a platform from under AND to help with platform script
-        if (!Grounded && rb.velocity.y > 0 || OnDelay) { return false;}
-        
+        // if (!Grounded && rb.velocity.y > 0) { return false;}
         Grounded = Physics2D.Raycast(transform.position, -transform.up, RayForGroundCheck, groundLayer);
-        
-        // Quick check to make sure the player isn't able to go up slopes that are too steep
-        if (Grounded && !IsOnSlope && SurfaceAngle != 0) { Grounded = false;}
-        
         return Grounded;
     }
 
@@ -267,44 +213,59 @@ public class PlayerMovement : MonoBehaviour
         myconstantForce.enabled = !Grounded;
     }
 
-    public bool OnSlope()
+    private void StickPlayerToGround()
     {
-        slopeHit = Physics2D.Raycast(transform.position, -transform.up, RayForGroundCheck, groundLayer);
-        if (slopeHit.collider != null)
+        // Shoot ray to the ground and stick player to the ground they are standing on
+        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, -jumpDir, RayForGroundCheck, groundLayer);
+        if (jumpDir == Vector2.up)
         {
-            SurfaceAngle = Mathf.Abs(Vector2.Angle(transform.up, slopeHit.normal));
-            return SurfaceAngle < maxSlopeAngle && SurfaceAngle != 0;
+            if (transform.position.y > hitInfo.point.y + hitpointIncrement)
+            {
+                transform.position = new Vector2(transform.position.x, hitInfo.point.y + hitpointIncrement);
+            } 
         }
-        
-        return false;
-        
+        else if (jumpDir == Vector2.down)
+        {
+            if (transform.position.y < hitInfo.point.y - hitpointIncrement)
+            {
+                transform.position = new Vector2(transform.position.x, hitInfo.point.y - hitpointIncrement);
+            } 
+        }
+        else if (jumpDir == Vector2.right)
+        {
+            if (transform.position.x < hitInfo.point.x - hitpointIncrement)
+            {
+                transform.position = new Vector2(hitInfo.point.x - hitpointIncrement, transform.position.y);
+            } 
+        }
+        else if (jumpDir == Vector2.left)
+        {
+            if (transform.position.x > hitInfo.point.x + hitpointIncrement)
+            {
+                transform.position = new Vector2(hitInfo.point.x + hitpointIncrement, transform.position.y);
+            } 
+        }
     }
 
-    public Vector3 GetSlopeDirection()
+    private void CapFallSpeed()
     {
-        return Vector3.ProjectOnPlane(Vector2.right, slopeHit.normal).normalized;
+        // Check jump direction to know the gravity direction. Then cap the fall speed if necessary
+        if (jumpDir == Vector2.up)
+        {
+            if (rb.velocity.y < -CappedSpeed) { rb.velocity= new Vector2(rb.velocity.x, -CappedSpeed); }
+        }
+        else if (jumpDir == Vector2.down)
+        {
+            if (rb.velocity.y > CappedSpeed) { rb.velocity = new Vector2(rb.velocity.x, CappedSpeed); }
+        }
+        else if (jumpDir == Vector2.left)
+        {
+            if (rb.velocity.x < -CappedSpeed) { rb.velocity = new Vector2(-CappedSpeed, rb.velocity.y); }
+        }
+        else if (jumpDir == Vector2.right)
+        {
+            if (rb.velocity.x > CappedSpeed) { rb.velocity = new Vector2(CappedSpeed, rb.velocity.y); }
+        }
     }
-
     
-    // For squash effect. Works with platform SquashAreaTrigger script
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Platform"))
-        {
-            MovingPlatformTouching = true;
-        }
-    }
-    private void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Platform"))
-        {
-            MovingPlatformTouching = false;
-        }
-    }
-
-    private void Squash()
-    {
-        // Debug.Log("Squash");
-        gm.Respawn();
-    }
 }
