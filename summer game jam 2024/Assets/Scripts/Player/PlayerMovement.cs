@@ -52,10 +52,7 @@ public class PlayerMovement : MonoBehaviour
     // Keeps track of the appropriate jump direction based on gravity pull
     public Vector2 jumpDir;
     [SerializeField] private float hitpointIncrement;
-    public enum Direction
-    {
-        up, down, left, right
-    }
+    public enum Direction { up, down, left, right }
 
     private void Start()
     {
