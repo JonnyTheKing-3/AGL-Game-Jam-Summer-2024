@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
         // If the player hasn't reached a checkpoint, reload the scene. Otherwise, spawn in the checkpoint
         if (respawn_point == null)
         {
-            FMODbanks.Instance.OnDestroy();
+            FMODbanks.Instance.OnSceneSwitch();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         else
