@@ -6,6 +6,8 @@ public class EnemyChasingAI : MonoBehaviour
     // refernce to the player
     [SerializeField] private GameObject player;
     [SerializeField] private Vector3 ogPos;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private float speedCap;
     
     // stats for this enemy
     public float speed;
@@ -21,6 +23,7 @@ public class EnemyChasingAI : MonoBehaviour
         ogPos = this.transform.position;
         player = GameObject.FindGameObjectWithTag("Player");
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -30,12 +33,15 @@ public class EnemyChasingAI : MonoBehaviour
         // if the player is within the range, chase the player
         if (distance < distanceBetween)
         {
-            //Vector2 direction = player.transform.position - transform.position;
-            transform.position = Vector2.MoveTowards(this.transform.position,
-                player.transform.position, speed * Time.deltaTime);
+            Vector2 direction = player.transform.position - transform.position;
+            rb.AddForce(direction * speed);
         }
-        
+
+        // Make sure enemy doesn't move too fast
+        rb.velocity = Vector2.ClampMagnitude(rb.velocity, speedCap);
+
     }
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {

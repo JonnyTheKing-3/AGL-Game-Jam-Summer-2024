@@ -22,9 +22,19 @@ public class SquashDetection : MonoBehaviour
     // For squash effect. Works with platform SquashAreaTrigger script
     private void OnCollisionEnter2D(Collision2D other)
     {
+        // Check if it's the platform and if it's not done moving
         if (other.gameObject.CompareTag("Platform"))
         {
-            MovingPlatformTouching = true;
+            if (other.transform.GetChild(0).TryGetComponent<MovingPlatformManaging>(out MovingPlatformManaging mpm))
+            {
+                MovingPlatformTouching = !mpm.finished;
+                Debug.Log("IN and Bool = " + MovingPlatformTouching);
+            }
+            else
+            {
+                MovingPlatformTouching = false;
+                Debug.Log("STOPPED and Bool = " + MovingPlatformTouching);
+            }
         }
     }
     private void OnCollisionExit2D(Collision2D other)

@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class DestroyWhenFriendIsTouched : MonoBehaviour
 {
-    // Update is called once per frame
+    public GameObject []listOfObjectsToDestroy;
     void Update()
     {
-       if (GameManager.GotFriend) { Destroy(gameObject);}
+        if (GameManager.GotFriend)
+        {
+            foreach (GameObject obj in listOfObjectsToDestroy)
+            {
+                Destroy(obj);
+            }
+            Destroy(gameObject);
+        }
     }
 }
