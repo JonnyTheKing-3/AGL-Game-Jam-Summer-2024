@@ -3,6 +3,7 @@ using System.Timers;
 using UnityEngine;
 using Vector2 = UnityEngine.Vector2;
 using FMODUnity;
+using Unity.VisualScripting;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -147,18 +148,21 @@ public class PlayerMovement : MonoBehaviour
         moveX = Input.GetAxisRaw("Horizontal");
         moveY = Input.GetAxisRaw("Vertical");
 
+        // If the player stopped and was moving, stop the hover sound
         if (moveX == 0 && Mathf.Abs(lastmoveX) == 1)
         { 
             FMODbanks.Instance.StopHoverSFX();
         }
-        // If the player stopped and was moving, stop the hover sound
+        
+        // When the player first moves, play the hover sound
         else if (Mathf.Abs(moveX) == 1 && lastmoveX == 0)
         {
             FMODbanks.Instance.PlayHoverSFX();
-        }  
-        // When the player first moves, play the hover sound
+            // Debug.Log("Play");
+            // windTrail.Play();
+        }
+
         lastmoveX = moveX; // Update lastmoveX
-        
     }
 
     public void Jump()

@@ -28,12 +28,10 @@ public class SquashDetection : MonoBehaviour
             if (other.transform.GetChild(0).TryGetComponent<MovingPlatformManaging>(out MovingPlatformManaging mpm))
             {
                 MovingPlatformTouching = !mpm.finished;
-                Debug.Log("IN and Bool = " + MovingPlatformTouching);
             }
             else
             {
                 MovingPlatformTouching = false;
-                Debug.Log("STOPPED and Bool = " + MovingPlatformTouching);
             }
         }
     }
