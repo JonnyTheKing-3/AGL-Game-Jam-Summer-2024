@@ -64,7 +64,7 @@ public class PassthroughPlatform : MonoBehaviour
             if (player.GetComponent<PlayerMovement>().moveY < -0.5f && playerCollider.bounds.min.y > col.bounds.center.y && Type != OneWayPlatform.GoingUp)
             {
                 isOnDelay = true;
-                player.GetComponent<PlayerMovement>().OnDelay = true;           // So player doesn't become grounded during this state
+                // player.GetComponent<PlayerMovement>().OnDelay = true;           // So player doesn't become grounded during this state
                 Physics2D.IgnoreCollision(playerCollider, col, true);
                 player.GetComponent<Rigidbody2D>().AddForce(Vector2.down * forceAfterDeactivation, ForceMode2D.Impulse);    // Impulse to make falling through the platform feel better
                 StartCoroutine(StopIgnoring());
@@ -78,7 +78,7 @@ public class PassthroughPlatform : MonoBehaviour
         yield return new WaitForSeconds(delay);
         isOnDelay = false;
         Physics2D.IgnoreCollision(playerCollider, col, false);
-        player.GetComponent<PlayerMovement>().OnDelay = false;
+        // player.GetComponent<PlayerMovement>().OnDelay = false;
     }
     
 }

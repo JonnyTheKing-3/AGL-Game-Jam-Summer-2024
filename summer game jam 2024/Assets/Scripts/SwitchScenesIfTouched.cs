@@ -7,6 +7,7 @@ public class SwitchScenesIfTouched : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            // Quit any sound before switching
             FMODbanks.Instance.OnSceneSwitch();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             Destroy(gameObject);

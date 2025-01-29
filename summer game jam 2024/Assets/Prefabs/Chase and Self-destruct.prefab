@@ -137,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   ogPos: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 8
   distanceBetween: 20
   gm: {fileID: 0}
 --- !u!95 &8990934659379960685

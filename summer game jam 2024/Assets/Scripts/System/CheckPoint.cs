@@ -18,6 +18,11 @@ public class CheckPoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             gm.CheckpointReached(gameObject.transform, other.transform.eulerAngles.z);
+            if (transform.GetChild(0).TryGetComponent<ParticleSystem>(out ParticleSystem particleSystem))
+            {
+                var mainModule = particleSystem.main;
+                mainModule.startColor = Color.green;
+            }
         }
     }
 }

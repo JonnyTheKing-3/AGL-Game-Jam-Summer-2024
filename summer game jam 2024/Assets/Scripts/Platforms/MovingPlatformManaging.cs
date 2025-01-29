@@ -17,11 +17,13 @@ public class MovingPlatformManaging : MonoBehaviour
     public bool IWantThisPlatformToMove = false;
     public bool StartMoving = false;
     public float duration = 0.5f;
+    public bool finished = false;
 
     void Start()
     {
         // Get the transform of the parent
         OriginalSpot = transform.parent.transform;
+        finished = false;
     }
 
     void Update()
@@ -43,7 +45,6 @@ public class MovingPlatformManaging : MonoBehaviour
         Vector3 targetPos = transform.position;
         float elapsedTime = 0f;
 
-        // Keep "shaking camera" for desired duration
         while (elapsedTime < duration)
         {
             // Strength variable is used as a regulator for the intensity of the shake
@@ -56,5 +57,6 @@ public class MovingPlatformManaging : MonoBehaviour
         }
 
         OriginalSpot.position = targetPos;
+        finished = true;
     }
 }

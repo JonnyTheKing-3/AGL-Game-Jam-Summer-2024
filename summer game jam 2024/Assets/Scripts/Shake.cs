@@ -14,13 +14,15 @@ public class Shake : MonoBehaviour
     
     // Only call one of the two methods at a time. If you call one method before 
     public bool StartStationaryShake = false;
+    public bool HasNotShook = true;
     
     // If either bool turns true, start the respective camera shake method
     private void Update()
     {
-        if (StartStationaryShake)
+        if (StartStationaryShake && HasNotShook)
         {
-            StartStationaryShake = false; 
+            StartStationaryShake = false;
+            HasNotShook = false;
             // FMODbanks.Instance.PlayPlatformFlyingSFX(gameObject); 
             StartCoroutine(StationaryShaking(duration, intensity));
         }
