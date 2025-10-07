@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: summer jam agl 2024 fmod/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638729244511116737
+  lastModified: 638953888743392141
   FileSizes:
   - Name: Desktop
     Value: 2559648
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: summer jam agl 2024 fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638729244461083154
+  lastModified: 638953888698223267
   FileSizes:
   - Name: Desktop
     Value: 1452
@@ -188,7 +188,7 @@ MonoBehaviour:
   Path: summer jam agl 2024 fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638729244460983432
+  lastModified: 638953888698163322
   FileSizes:
   - Name: Desktop
     Value: 4312
@@ -208,7 +208,7 @@ MonoBehaviour:
   Path: summer jam agl 2024 fmod/Build/Desktop/Player.bank
   Name: Player
   StudioPath: bank:/Player
-  lastModified: 638729244524033295
+  lastModified: 638953888754581120
   FileSizes:
   - Name: Desktop
     Value: 408032
@@ -245,7 +245,7 @@ MonoBehaviour:
   - {fileID: -2982182226062754323}
   StringsBanks:
   - {fileID: -8668691135767664119}
-  cacheTime: 638729244524033295
+  cacheTime: 638953888754581120
   cacheVersion: 131618
 --- !u!114 &822023088596526858
 MonoBehaviour:
@@ -317,7 +317,7 @@ MonoBehaviour:
   Path: summer jam agl 2024 fmod/Build/Desktop/Platforms.bank
   Name: Platforms
   StudioPath: bank:/Platforms
-  lastModified: 638729244513214759
+  lastModified: 638953888745069991
   FileSizes:
   - Name: Desktop
     Value: 54592
